@@ -1,3 +1,4 @@
+// Cambio realizado en master para practicar la resolucion de conflictos.
 // This program simulates a simple random walker in a 1D grid size N and equally spaced points.
 // Walker starts at the center of the grid which is located at x=0, and takes steps to the left or right with equal probability.
 // A two dimensional vector is initialized to store the random walk sequence of S steps in a row, where each row corresponds to a random walk sequence generated from a different random seed.
