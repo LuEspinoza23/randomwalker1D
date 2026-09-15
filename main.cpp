@@ -1,46 +1,17 @@
 
-// This program simulates a simple random walker in a 1D grid of equally
-// spaced points.
-//
-// The walker starts at the center of the grid, located at x = 0.
-// At each time step, the walker moves one position to the left or right.
-// Unlike the original version, the probabilities of moving right and left
-// can be different.
-//
-// The probability of moving to the right is p_right.
-// The probability of moving to the left is p_left = 1 - p_right.
-//
-// A two-dimensional vector stores N random walk sequences, each containing
-// S steps. Each sequence is generated using a different random seed.
-//
-// The program asks the user to enter:
-//   - The number of steps S.
-//   - The number of random walk sequences N.
-//   - The probability p_right of taking a step to the right.
-//
-// The program generates three output files:
-//
-//   random_walks.dat
-//       Contains the time step and the position of every random walk.
-//
-//   average_positions.dat
-//       Contains the average position of the walker at every time step.
-//
-//   variance_positions.dat
-//       Contains the variance of the position at every time step.
-//
-// The variance is defined as:
-//
-//   sigma^2 = <R^2> - <R>^2
-//
-// For a one-dimensional random walk with steps of +1 and -1:
-//
-//   <R> = S(2p - 1)
-//
-//   sigma^2 = 4Sp(1-p)
-//
-// where p is the probability of taking a step to the right.
-//
+// Cambio realizado en master para practicar la resolucion de conflictos.
+// This program simulates a simple random walker in a 1D grid size N and equally spaced points.
+// Walker starts at the center of the grid which is located at x=0, and takes steps to the left or right with equal probability.
+// A two dimensional vector is initialized to store the random walk sequence of S steps in a row, where each row corresponds to a random walk sequence generated from a different random seed.
+// All rows are generated from different random seeds.
+// It is assumed that the time intervals are all equal and the walker takes one step at each time interval.
+// The program starts by asking the user to input the number of steps S and the number of random walk sequences N.
+// After generating the random walk sequences, the program outputs all random walks to a file named "random_walks.dat"
+// The output files contains a column for time or step number, and N columns for the random walk sequences generated from different random seeds.
+// After that, the program calculates the average position of the walker at each time step across all random walk sequences and outputs the average positions to a file named "average_positions.dat".
+// It also obtains the variance of the walker's position at each time step across all random walk sequences and outputs the variance to a file named "variance_positions.dat",
+// with the variance defined as the average of the squared displacement from the origin minus the squared average position at each time step, sigma^2_R=<R^2>-<R>^2, where R is the position of the walker at each time step.
+>>>>>>> master
 // Program starts.
 
 #include <iostream>
